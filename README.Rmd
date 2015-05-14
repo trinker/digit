@@ -50,7 +50,7 @@ f(c(0.0, 0, .2, -00.02, 1.122222, pi, "A"))
 ```
 
 
-We can see it's use in actual model reproting as well:
+We can see its use in actual model reproting as well:
 
 
 ```{r}

@@ -53,7 +53,7 @@ Demonstration
 
     ## [1] ".000"  ".000"  ".200"  "-.020" "1.122" "3.142" NA
 
-We can see it's use in actual model reproting as well:
+We can see its use in actual model reproting as well:
 
     mod1 <- t.test(1:10, y = c(7:20))
     sprintf(
