@@ -53,7 +53,7 @@ Demonstration
 
     ## [1] ".000"  ".000"  ".200"  "-.020" "1.122" "3.142" NA
 
-We can see its use in actual model reproting as well:
+We can see its use in actual model reporting as well:
 
     mod1 <- t.test(1:10, y = c(7:20))
 
@@ -75,7 +75,7 @@ We can see its use in actual model reproting as well:
 
     ## [1] "t = -1.63 (p = .12)"
 
-We can build a function to reprot model statistics:
+We can build a function to report model statistics:
 
     report <- function(mod, stat = NULL, digits = c(0, 2, 2)) {
         
@@ -107,5 +107,5 @@ chunk:
 
     mymod <- oneway.test(count ~ spray, InsectSprays)
 
-And then use <code class="r">`` `r report(mymod)` ``</code> resuting in
+And then use <code class="r">`` `r report(mymod)` ``</code> resulting in
 a report that looks like this: F(5, 30) = 36.07, p \< .05
