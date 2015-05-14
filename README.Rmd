@@ -55,13 +55,15 @@ We can see its use in actual model reproting as well:
 
 ```{r}
 mod1 <- t.test(1:10, y = c(7:20))
+
 sprintf(
     "t = %s (%s)",
     f(mod1$statistic),
     p(mod1$p.value)
 )
+```
 
-
+```{r}
 mod2 <- t.test(1:10, y = c(7:20, 200))
 
 sprintf(

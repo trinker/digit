@@ -56,6 +56,7 @@ Demonstration
 We can see its use in actual model reproting as well:
 
     mod1 <- t.test(1:10, y = c(7:20))
+
     sprintf(
         "t = %s (%s)",
         f(mod1$statistic),
