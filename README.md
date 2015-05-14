@@ -6,7 +6,6 @@ digit
 Status](https://travis-ci.org/trinker/digit.svg?branch=master)](https://travis-ci.org/trinker/digit)
 [![Coverage
 Status](https://coveralls.io/repos/trinker/digit/badge.svg?branch=master)](https://coveralls.io/r/trinker/digit?branch=master)
-
 <a href="https://img.shields.io/badge/Version-0.0.1-orange.svg"><img src="https://img.shields.io/badge/Version-0.0.1-orange.svg" alt="Version"/></a>
 </p>
 **digit** contains tools to assist in the formatting of numbers for
