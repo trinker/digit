@@ -4,7 +4,7 @@
 \alias{f}
 \title{Format Digits}
 \usage{
-f(x, digits = getOption("digit_digits"))
+f(x, digits = getOption("digit_digits"), s, e)
 }
 \arguments{
 \item{x}{A vector of numbers (or string equivalents).}
@@ -12,6 +12,10 @@ f(x, digits = getOption("digit_digits"))
 \item{digits}{The number of digits to use.  Defaults to 3.  Can be set
 globally via: \code{options(digit_digits = n)} where n is the number of
 digits beyond the decimal point to include.}
+
+\item{s}{A string to paste at the begining of the output from \code{f}.}
+
+\item{e}{A string to paste at the end of the output from \code{f}.}
 }
 \value{
 Returns a string of publication ready digits.
@@ -24,6 +28,12 @@ f(c(0.0, 0, .2, -00.02, 1.122222, pi))
 f(rnorm(10))
 f(rnorm(20, 100, 200), 0)
 f(c("-0.23", "0", ".23"))
+
+## Percents
+f(c(30, 33.45, .1), 1, e="\%")
+
+## Money
+f(c(30, 33.45, .1), 2, s="$")
 }
 \seealso{
 \code{\link[digit]{p}}

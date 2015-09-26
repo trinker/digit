@@ -13,3 +13,15 @@ test_that("f throws proper warnings.",{
     expect_warning(f(.3, c(2, 3)))
 
 })
+
+test_that("f with s works",{
+
+    expect_true(all(grepl("%$", f(c(30, 33.45, .1), 1, e="%"))))
+
+})
+
+
+test_that("f with e works",{
+
+    expect_true(all(grepl("^\\$", f(c(30, 33.45, .1), 2, s="$"))))
+})
