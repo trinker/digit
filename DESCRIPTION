@@ -13,3 +13,4 @@ Date: 2016-02-12
 License: GPL-2
 LazyData: TRUE
 Roxygen: list(wrap = FALSE)
+RoxygenNote: 5.0.1
